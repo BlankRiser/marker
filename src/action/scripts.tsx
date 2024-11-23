@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import ActionApp from './ActionApp'
-import './styles.css'
+import ActionApp from './action-app'
+import '../styles.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root')!)
+const root = ReactDOM.createRoot(document.getElementById('action-root')!)
 
 root.render(
   <React.StrictMode>

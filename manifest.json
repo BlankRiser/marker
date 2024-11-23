@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "name": "marker",
   "description": "An Extension.js example.",
+  "author": "Ram Shankar Choudhary",
   "icons": {
     "16": "images/extension_16.png",
     "48": "images/extension_48.png"
@@ -13,8 +14,25 @@
       "16": "images/extension_16.png",
       "48": "images/extension_48.png"
     },
-    "default_title": "ChatGPT",
+    "default_title": "Marker",
     "default_popup": "./src/action/index.html"
   },
-  "author": "Your Name"
+  "background": {
+    "chromium:service_worker": "./src/background.ts"
+	},
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./src/content/scripts.tsx"],
+      "css": ["./src/styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+		{
+			"resources": ["public/*"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": ["webRequest", "storage", "contextMenus"],
+	"host_permissions": ["<all_urls>"]
 }

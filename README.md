@@ -1,6 +1,15 @@
-# marker
+# Marker
 
-> An Extension.js example.
+A simple extension to save any text you highlight on the web.
+
+
+## Features
+
+- Save text to local storage
+- View all saved text in a popup
+- Be able to navigate to the website of the saved text
+- Fuzzy search through all your saved text
+
 
 ## Available Scripts
 

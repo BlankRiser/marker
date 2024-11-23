@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#action-root {
+  width: 375px;
+  height: 600px;
+}
+/* This is the container for the extension when text is selected */
+
+#extension-root {
+  position: fixed;
+  width: 100%;
+  bottom: 1rem;
+  inset-x: 0;
+  z-index: 99999;
+}
